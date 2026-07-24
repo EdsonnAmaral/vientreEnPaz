@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vientre en Paz - 20 Remedios Naturales para tu Digestión</title>
+    <meta name="description" content="20 Remedios Naturales para una Digestión que Funciona de Verdad">
+    <meta property="og:image" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a472a;
+            --accent: #f0c040;
+            --light-bg: #e8f5e9;
+            --white: #ffffff;
+            --dark-bg: #11301c;
+            --text-dark: #222222;
+            --text-light: #f5f5f5;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+            overflow-x: hidden;
+            padding-top: 40px; /* For sticky countdown bar */
+            padding-bottom: 70px; /* For mobile floating button */
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .text-center { text-align: center; }
+        .text-white { color: var(--text-light); }
+        .text-gold { color: var(--accent); }
+        
+        .bg-primary { background-color: var(--primary); color: var(--white); }
+        .bg-dark { background-color: var(--dark-bg); color: var(--white); }
+        .bg-light { background-color: var(--light-bg); }
+        .bg-white { background-color: var(--white); }
+
+        /* Sticky Countdown Bar */
+        .sticky-countdown-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--accent);
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            font-weight: 700;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Hero */
+        .hero-headline {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 25px;
+        }
+        
+        .hero-subheadline {
+            font-size: 1.2rem;
+            color: #444;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        .book-mockup-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto 30px;
+            perspective: 1000px;
+        }
+
+        .book-mockup {
+            width: 100%;
+            aspect-ratio: 3/4;
+            background: linear-gradient(135deg, #1a472a 0%, #11301c 100%);
+            border-radius: 5px 15px 15px 5px;
+            box-shadow: 
+                -5px 0 10px rgba(0,0,0,0.2) inset,
+                20px 20px 30px rgba(0,0,0,0.3),
+                0 0 40px rgba(240, 192, 64, 0.2);
+            position: relative;
+            transform: rotateY(-15deg);
+            transform-style: preserve-3d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            text-align: center;
+            padding: 20px;
+            border: 1px solid rgba(240, 192, 64, 0.3);
+        }
+
+        .book-mockup::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 15px;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+            border-radius: 5px 0 0 5px;
+        }
+
+        /* Checkmarks */
+        .check-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .check-list li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 20px;
+            font-size: 1.15rem;
+        }
+
+        .check-list li::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--accent);
+            font-size: 1.5rem;
+            line-height: 1.2;
+        }
+
+        /* VSL */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            background: #000;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        .video-container iframe,
+        .video-container .placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .video-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            color: #fff;
+            border: 2px dashed #666;
+            text-align: center;
+            padding: 20px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        /* Two columns */
+        .two-cols {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .two-cols {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .col-box {
+            background: var(--light-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+
+        .col-box h3 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Ingredients Grid */
+        .ingredients-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        @media (min-width: 480px) {
+            .ingredients-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .ingredients-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .ingredient-item {
+            background: rgba(255,255,255,0.1);
+            padding: 15px 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            border: 1px solid rgba(240, 192, 64, 0.3);
+            color: var(--accent);
+        }
+
+        /* Testimonials */
+        .testimonial-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+            text-align: left;
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            font-size: 5rem;
+            color: var(--light-bg);
+            font-family: serif;
+            line-height: 1;
+            z-index: 0;
+        }
+
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+            font-style: italic;
+            color: #444;
+        }
+
+        .testimonial-author {
+            margin-top: 15px;
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+
+        /* Guarantee */
+        .guarantee-box {
+            border: 2px dashed var(--accent);
+            padding: 40px;
+            border-radius: 15px;
+            background: rgba(240, 192, 64, 0.05);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .guarantee-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        /* Value Stack */
+        .value-stack {
+            background: rgba(0,0,0,0.2);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px auto;
+            border: 1px solid rgba(240, 192, 64, 0.2);
+            max-width: 500px;
+        }
+
+        .value-stack ul {
+            list-style: none;
+            text-align: left;
+        }
+
+        .value-stack li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .value-stack li:last-child {
+            border-bottom: none;
+        }
+
+        .price-reveal {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        .price-strike {
+            text-decoration: line-through;
+            color: #aaa;
+            font-size: 1.2rem;
+        }
+
+        .price-today {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--accent);
+            margin: 10px 0 20px;
+        }
+
+        /* Hotmart Container */
+        .hotmart-container {
+            margin: 30px 0;
+        }
+
+        /* Mobile Floating CTA */
+        .mobile-floating-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(26, 71, 42, 0.95);
+            backdrop-filter: blur(5px);
+            padding: 15px;
+            text-align: center;
+            z-index: 999;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+            display: none;
+        }
+
+        @media (max-width: 767px) {
+            .mobile-floating-cta {
+                display: block;
+            }
+        }
+
+        /* Notifications */
+        .purchase-notification {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(4px);
+            border-left: 4px solid var(--primary);
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            z-index: 1001;
+            transform: translateY(150px);
+            opacity: 0;
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            max-width: calc(100% - 40px);
+        }
+
+        @media (max-width: 767px) {
+            .purchase-notification {
+                bottom: 85px; /* Above floating CTA */
+            }
+        }
+
+        .purchase-notification.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .notification-icon {
+            background: var(--light-bg);
+            color: var(--primary);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .notification-content {
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.3;
+        }
+
+        .notification-name {
+            font-weight: 700;
+        }
+        
+        .notification-time {
+            font-size: 0.75rem;
+            color: #777;
+            margin-top: 3px;
+        }
+
+        /* Timer large numbers */
+        .timer-numbers {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--accent);
+            letter-spacing: 2px;
+            margin: 20px 0;
+            font-variant-numeric: tabular-nums;
+        }
+
+        footer {
+            padding: 40px 20px;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        .text-small {
+            font-size: 0.85rem;
+            opacity: 0.8;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SECTION 11a — STICKY COUNTDOWN TIMER -->
+    <div class="sticky-countdown-bar" id="sticky-timer">
+        ⏳ OFERTA POR TIEMPO LIMITADO — FALTAN SOLO: <span id="sticky-time">07:00:00</span>
+    </div>
+
+    <!-- SECTION 1 — HERO -->
+    <section class="bg-white">
+        <div class="container text-center" style="padding-top: 80px;">
+            <h1 class="hero-headline">
+                Tu Estómago Lleva Tiempo<br>
+                Enviándote Señales de Alerta.<br>
+                ¿Las Estás Ignorando?
+            </h1>
+            <p class="hero-subheadline">
+                "Miles de personas viven con gases, acidez, hinchazón e intestino irritado<br>
+                sin saber que la solución está en ingredientes simples que ya tienen en su cocina."
+            </p>
+            
+            <div class="book-mockup-container">
+                <div class="book-mockup" style="padding: 0; overflow: hidden;">
+                    <img src="capa.png" alt="Capa Vientre en Paz" style="width: 100%; height: 100%; object-fit: cover; border-radius: 5px 15px 15px 5px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2 — PAIN POINTS -->
+    <section class="bg-primary">
+        <div class="container">
+            <h2 class="text-center text-gold" style="margin-bottom: 40px;">¿Te identificas con alguno de estos síntomas?</h2>
+            
+            <div style="max-width: 650px; margin: 0 auto;">
+                <ul class="check-list">
+                    <li>Te despiertas con el estómago inflamado casi todos los días</li>
+                    <li>La acidez y el reflujo te acompañan después de cada comida</li>
+                    <li>Los gases y la hinchazón te hacen sentir incómodo en cualquier lugar</li>
+                    <li>Has probado pastillas y dietas pero el problema siempre vuelve</li>
+                    <li>La digestión lenta te roba energía y bienestar todo el día</li>
+                    <li>Tienes dolor o presión bajo las costillas después de comer</li>
+                    <li>Tu médico solo te da pastillas pero nunca te explica la causa</li>
+                </ul>
+                
+                <p class="text-center text-gold" style="font-size: 1.3rem; font-weight: 700; margin-top: 40px;">
+                    Si marcaste 2 o más... necesitas leer esto.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 — VSL VIDEO -->
+    <section class="bg-dark">
+        <div class="container text-center">
+            <p style="font-size: 1.2rem; margin-bottom: 30px; font-weight: 600;">
+                Antes de continuar, mira este video.<br>
+                Lo que vas a descubrir puede cambiar tu digestión para siempre.
+            </p>
+            
+            <div class="video-container" style="padding-bottom: 177.77%; max-width: 400px; margin: 0 auto;">
+                <iframe src="https://www.youtube.com/embed/-CdVJHmUjME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4 — CURIOSITY / STORY -->
+    <section class="bg-light">
+        <div class="container">
+            <h2 class="text-center" style="color: var(--primary); margin-bottom: 40px;">
+                Lo que nadie te explicó sobre tu digestión y tu malestar
+            </h2>
+            
+            <div style="max-width: 700px; margin: 0 auto; font-size: 1.15rem;">
+                <p>El problema no es lo que comes. No es la edad. Y definitivamente no es que 'así eres tú'.</p>
+
+                <p>El problema es que el intestino — que procesa todo lo que entra en tu cuerpo — está inflamado y sobrecargado. Y el hígado — que filtra más de 1.5 litros de sangre por minuto — necesita apoyo urgente.</p>
+
+                <p>Cuando estos órganos fallan en silencio, el cuerpo entero lo siente. Pero la medicina convencional rara vez te dice cómo ayudarlos desde adentro.</p>
+
+                <p>La naturaleza, en cambio, dejó exactamente lo que necesitas. En tu cocina. En el mercado más cercano. En plantas que llevan siglos usándose con resultados documentados.</p>
+
+                <p style="font-weight: 600; color: var(--primary); margin-top: 30px;">
+                    Lo que descubrirás en este ebook no es un secreto. Es información que simplemente nadie te había reunido en un solo lugar, de forma clara y lista para aplicar hoy.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5 — WHAT'S INSIDE -->
+    <section class="bg-white">
+        <div class="container">
+            <h2 class="text-center" style="color: var(--primary);">¿Qué vas a encontrar dentro?</h2>
+            
+            <div class="two-cols">
+                <!-- COLUMN 1 -->
+                <div class="col-box">
+                    <h3>DIGESTIÓN Y GASTRITIS</h3>
+                    <ul class="check-list" style="font-size: 1rem;">
+                        <li>Las 5 señales que indican que tu sistema digestivo está en crisis</li>
+                        <li>Los 3 alimentos que inflaman tu intestino silenciosamente</li>
+                        <li>Técnica de hidratación digestiva simple y gratuita</li>
+                        <li><strong>Receta 1:</strong> Agua de limón con cúrcuma y jengibre en ayunas</li>
+                        <li><strong>Receta 2:</strong> Té de manzanilla con miel — calma la gastritis desde el primer día</li>
+                        <li><strong>Receta 3:</strong> Jugo de aloe vera con pepino — regenera la mucosa gástrica naturalmente</li>
+                        <li><strong>Receta 4:</strong> Infusión de menta con jengibre — elimina gases e hinchazón rápidamente</li>
+                    </ul>
+                </div>
+
+                <!-- COLUMN 2 -->
+                <div class="col-box">
+                    <h3>HÍGADO E INTESTINO</h3>
+                    <ul class="check-list" style="font-size: 1rem;">
+                        <li>Las 5 señales de hígado sobrecargado que se confunden con simple cansancio</li>
+                        <li>Técnica de limpieza hepática natural en 4 días</li>
+                        <li>Los alimentos aliados que la mayoría ignora</li>
+                        <li><strong>Receta 1:</strong> Agua de ajo y limón — antibacteriana y depurativa</li>
+                        <li><strong>Receta 2:</strong> Batido de zanahoria con papaya — enzimas digestivas naturales para el SIBO</li>
+                        <li><strong>Receta 3:</strong> Té de diente de león con miel — regenera el hígado naturalmente</li>
+                        <li><strong>Receta 4:</strong> Infusión de alcachofa con menta — estimula la bilis y mejora la digestión de grasas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6 — INGREDIENTS TEASER -->
+    <section class="bg-primary">
+        <div class="container text-center">
+            <h2 class="text-gold">Ingredientes que ya tienes en casa<br><span style="font-size: 1.2rem; font-weight: 500; color: var(--white);">(o que cuestan menos de $2)</span></h2>
+            
+            <div class="ingredients-grid">
+                <div class="ingredient-item">🍋 Limón</div>
+                <div class="ingredient-item">💛 Cúrcuma</div>
+                <div class="ingredient-item">🫚 Jengibre</div>
+                <div class="ingredient-item">🍯 Miel</div>
+                <div class="ingredient-item">🧄 Ajo</div>
+                <div class="ingredient-item">🪴 Aloe Vera</div>
+                <div class="ingredient-item">🌼 Manzanilla</div>
+                <div class="ingredient-item">🌿 Menta</div>
+                <div class="ingredient-item">🍈 Papaya</div>
+                <div class="ingredient-item">🥕 Zanahoria</div>
+                <div class="ingredient-item">🌿 Perejil</div>
+                <div class="ingredient-item">🤎 Canela</div>
+            </div>
+
+            <p style="margin-top: 40px; font-size: 1.2rem; font-weight: 600;">
+                No necesitas suplementos caros.<br>
+                No necesitas receta médica.<br>
+                Solo necesitas saber cómo combinarlos y cuándo tomarlos.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 7 — SOCIAL PROOF -->
+    <section class="bg-light">
+        <div class="container">
+            <h2 class="text-center" style="color: var(--primary); margin-bottom: 50px;">Lo que dicen quienes ya lo aplicaron</h2>
+            
+            <div style="max-width: 600px; margin: 0 auto;">
+                <!-- Card 1 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-content">"Llevaba años con gastritis crónica. A los 10 días de tomar el agua de cúrcuma en ayunas ya me sentía diferente. No puedo creer que algo tan simple funcione tan bien."</p>
+                    <p class="testimonial-author">Rosa M., 52 años, México</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-content">"Tenía gases e hinchazón todos los días. El plan de 21 días me cambió la vida. En dos semanas mi barriga por fin estaba tranquila."</p>
+                    <p class="testimonial-author">Carmen L., 47 años, Colombia</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-content">"Me sorprendió lo completo que es. Pensé que iba a ser otro ebook genérico pero tiene recetas reales que se pueden hacer con lo que tienes en casa. Ya lo aplico con toda mi familia."</p>
+                    <p class="testimonial-author">Lucía P., 61 años, Argentina</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8 — AUTHOR -->
+    <section class="bg-white">
+        <div class="container text-center" style="max-width: 600px;">
+            <h2 style="color: var(--primary); margin-bottom: 5px;">Essencia Saludable</h2>
+            <p style="font-weight: 600; color: #666; margin-bottom: 30px;">Tu comunidad de salud natural en español.</p>
+            
+            <p>Llevamos años compartiendo remedios naturales con miles de personas en toda Latinoamérica.</p>
+            
+            <p style="font-style: italic; font-weight: 600; color: var(--primary); margin-top: 20px;">
+                "Creemos que el cuerpo tiene todo lo que necesita para sanarse. Nuestra misión es darte las herramientas correctas."
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 9 — OFFER REVEAL -->
+    <section class="bg-primary">
+        <div class="container text-center">
+            <h2 class="text-gold">Todo esto por menos de lo que cuesta una consulta médica</h2>
+            
+            <div class="value-stack">
+                <ul class="check-list" style="font-size: 1.1rem; width: 100%;">
+                    <li>Ebook completo "Vientre en Paz" <span style="float: right;">Valor: $37</span></li>
+                    <li>20 remedios naturales paso a paso <span style="float: right;">Valor: $20</span></li>
+                    <li>Plan de alimentación de 21 días <span style="float: right;">Valor: $15</span></li>
+                    <li>Guía de emergencia digestiva <span style="float: right;">Valor: $10</span></li>
+                    <li class="text-gold">🎁 BONO: Quemar Calorías en 24 Horas <span style="float: right;">Valor: $9,90</span></li>
+                    <li>Acceso inmediato + descarga permanente <span style="float: right;">Valor: $5</span></li>
+                </ul>
+            </div>
+            
+            <div class="price-reveal">
+                <p>Total real value: $96,90</p>
+                <p class="price-strike">Precio regular: $29,90</p>
+                <div class="price-today">HOY SOLO: $17 USD</div>
+            </div>
+
+            <!-- HOTMART WIDGET -->
+            <div class="hotmart-container">
+                <script type="text/javascript">
+                  function importHotmart(){
+                    var imported = document.createElement('script');
+                    imported.src = 'https://static.hotmart.com/checkout/widget.min.js';
+                    document.head.appendChild(imported);
+                    var link = document.createElement('link');
+                    link.rel = 'stylesheet';
+                    link.type = 'text/css';
+                    link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css';
+                    document.head.appendChild(link);
+                  }
+                  importHotmart();
+                </script>
+                <a onclick="return false;" href="https://pay.hotmart.com/F106595879G" class="hotmart-fb hotmart__button-checkout">
+                    <img src='https://static.hotmart.com/img/btn-buy-green.png' alt="Comprar Ahora">
+                </a>
+                <p class="text-small" style="margin-top: 15px; font-weight: 500;">Pago 100% seguro • Acceso inmediato - Garantía de 7 días</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10 — GUARANTEE -->
+    <section class="bg-white">
+        <div class="container text-center">
+            <div class="guarantee-box">
+                <div class="guarantee-icon">🛡️</div>
+                <h2 style="color: var(--primary);">Garantía Total de 7 Días</h2>
+                <p style="font-size: 1.1rem; color: #444;">
+                    Si por cualquier razón no quedas satisfecho, te devolvemos el 100% de tu dinero. Sin preguntas. Sin complicaciones.<br>
+                    <strong>El riesgo es cero — tuyo.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 11 — COUNTDOWN TIMER -->
+    <section class="bg-dark">
+        <div class="container text-center">
+            <h3 class="text-gold" style="font-size: 1.3rem;">⏳ OFERTA POR TIEMPO LIMITADO — FALTAN SOLO:</h3>
+            
+            <div class="timer-numbers" id="main-timer">
+                07 : 00 : 00
+            </div>
+            
+            <div id="timer-expired" style="display: none; color: #ff4444; font-size: 1.5rem; font-weight: 700; margin: 20px 0;">
+                ⚠️ OFERTA EXPIRADA
+            </div>
+
+            <!-- HOTMART WIDGET -->
+            <div class="hotmart-container" style="margin-top: 10px;">
+                <a onclick="return false;" href="https://pay.hotmart.com/F106595879G" class="hotmart-fb hotmart__button-checkout">
+                    <img src='https://static.hotmart.com/img/btn-buy-green.png' alt="Comprar Ahora">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 12 — FINAL CTA -->
+    <section class="bg-primary">
+        <div class="container text-center">
+            <h2 class="text-white" style="font-size: 2.2rem;">Tu digestión no puede esperar otro año</h2>
+            
+            <div style="max-width: 650px; margin: 0 auto 40px; font-size: 1.15rem;">
+                <p>Cada día que pasa con el intestino inflamado y el hígado sobrecargado es un día más de malestar, cansancio y sensación de que algo no está bien.</p>
+                <p style="font-weight: 700; color: var(--accent); font-size: 1.3rem; margin-top: 20px;">La solución está a un clic. Y cuesta menos de $17.</p>
+            </div>
+
+            <!-- HOTMART WIDGET -->
+            <div class="hotmart-container">
+                <a onclick="return false;" href="https://pay.hotmart.com/F106595879G" class="hotmart-fb hotmart__button-checkout">
+                    <img src='https://static.hotmart.com/img/btn-buy-green.png' alt="Comprar Ahora">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 13 — PURCHASE NOTIFICATIONS -->
+    <div id="purchase-notification" class="purchase-notification">
+        <div class="notification-icon">🌿</div>
+        <div class="notification-content">
+            <div class="notification-name" id="notify-name">Nombre</div>
+            <div id="notify-action">acaba de comprar el ebook 🌿</div>
+            <div class="notification-time">Hace un momento</div>
+        </div>
+    </div>
+
+    <!-- MOBILE FLOATING CTA -->
+    <div class="mobile-floating-cta">
+        <a onclick="return false;" href="https://pay.hotmart.com/F106595879G" class="hotmart-fb hotmart__button-checkout" style="display: inline-block;">
+            <img src='https://static.hotmart.com/img/btn-buy-green.png' alt="Comprar Ahora" style="height: 45px; width: auto;">
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-center">
+        <p style="font-weight: 700; margin-bottom: 10px; color: var(--white);">🌿 Essencia Saludable</p>
+        <p>© 2026 — Vientre en Paz.<br>Todos los derechos reservados. Producto digital.<br>Oferta por tiempo limitado.</p>
+        <p style="margin: 20px 0;"><a href="#">Política de Privacidad</a> | <a href="#">Términos de Uso</a></p>
+        <p style="font-size: 0.8rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-top: 20px; color: #888; max-width: 500px; margin-left: auto; margin-right: auto;">
+            ⚠️ Este ebook es de carácter informativo y educativo.<br>Consulta a tu médico si los síntomas persisten.
+        </p>
+    </footer>
+
+    <!-- JS LOGIC -->
+    <script>
+        // 1. COUNTDOWN TIMER
+        let totalSeconds = 7 * 3600; // 7 hours
+        
+        function formatTime(sec) {
+            let h = Math.floor(sec / 3600);
+            let m = Math.floor((sec % 3600) / 60);
+            let s = sec % 60;
+            return {
+                h: h.toString().padStart(2, '0'),
+                m: m.toString().padStart(2, '0'),
+                s: s.toString().padStart(2, '0')
+            };
+        }
+
+        function updateTimer() {
+            if (totalSeconds <= 0) {
+                document.getElementById('main-timer').style.display = 'none';
+                document.getElementById('timer-expired').style.display = 'block';
+                document.getElementById('sticky-time').innerText = "EXPIRADA";
+                return;
+            }
+            
+            totalSeconds--;
+            let t = formatTime(totalSeconds);
+            
+            // Update main timer
+            document.getElementById('main-timer').innerText = `${t.h} : ${t.m} : ${t.s}`;
+            
+            // Update sticky timer
+            document.getElementById('sticky-time').innerText = `${t.h}:${t.m}:${t.s}`;
+        }
+
+        setInterval(updateTimer, 1000);
+
+        // 2. PURCHASE NOTIFICATIONS
+        const buyers = [
+            "Sofía M. — Ciudad de México", "Valentina R. — Buenos Aires", "Isabella G. — Montevideo",
+            "Camila F. — Guadalajara", "Lucía P. — Córdoba", "Martina S. — Santiago",
+            "Gabriela T. — Bogotá", "Daniela V. — Monterrey", "Valeria C. — Rosario",
+            "Fernanda L. — Lima", "Carolina B. — Mendoza", "Andrea M. — Puebla",
+            "Natalia R. — Medellín", "Alejandra G. — Tijuana", "Paula S. — La Plata",
+            "Claudia V. — Cali", "Monica T. — Cancún", "Verónica R. — Tucumán",
+            "Paola C. — Barranquilla", "Laura M. — Querétaro", "Rosa G. — Mar del Plata",
+            "Carmen L. — Mérida", "Elena S. — Asunción", "Patricia V. — San José",
+            "Adriana M. — Caracas", "Marcela R. — Guayaquil", "Silvia G. — La Paz",
+            "María T. — Santa Cruz", "Ana C. — Quito", "Teresa L. — Ciudad de Guatemala",
+            "Sandra M. — San Salvador", "Diana R. — Tegucigalda", "Norma G. — Managua",
+            "Gloria S. — Santo Domingo", "Esperanza V. — San Juan"
+        ];
+
+        const actions = [
+            "acaba de comprar el ebook 🌿",
+            "garantizó su acceso 💚",
+            "está transformando su digestión 🌿",
+            "finalizó su compra ✅",
+            "acaba de unirse 💚"
+        ];
+
+        const notificationEl = document.getElementById('purchase-notification');
+        const nameEl = document.getElementById('notify-name');
+        const actionEl = document.getElementById('notify-action');
+
+        function showRandomNotification() {
+            // Get random data
+            const randomBuyer = buyers[Math.floor(Math.random() * buyers.length)];
+            const randomAction = actions[Math.floor(Math.random() * actions.length)];
+            
+            // Update DOM
+            nameEl.innerText = randomBuyer;
+            actionEl.innerText = randomAction;
+            
+            // Show
+            notificationEl.classList.add('show');
+            
+            // Hide after 4-6 seconds
+            const visibleDuration = Math.floor(Math.random() * (6000 - 4000 + 1)) + 4000;
+            setTimeout(() => {
+                notificationEl.classList.remove('show');
+                
+                // Schedule next (3-18 seconds after hiding)
+                const nextInterval = Math.floor(Math.random() * (18000 - 3000 + 1)) + 3000;
+                setTimeout(showRandomNotification, nextInterval);
+            }, visibleDuration);
+        }
+
+        // Show first notification immediately on load (after a tiny delay for CSS transition)
+        setTimeout(showRandomNotification, 1000);
+    </script>
+</body>
+</html>
